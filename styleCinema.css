@@ -1,0 +1,231 @@
+#hatBox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(104, 13, 165);
+  height: 150px;
+}
+
+#logoText {
+  font-size: 26pt;
+  color: aqua;
+}
+
+#menuText a {
+  font-size: 20pt;
+  color: azure;
+  text-decoration: none;
+}
+
+#personalArea {
+  padding-left: 80px;
+}
+
+#hatBox a:hover {
+  color: red;
+}
+
+#menuText a {
+  margin: 0px 30px;
+}
+
+#personalArea {
+  font-size: 20pt;
+  color: aqua;
+  text-decoration: none;
+}
+
+.contentBox {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 100px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+}
+
+.contentBox div {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contentBox div nav {
+  display: flex;
+  flex-direction: inherit;
+}
+
+
+.nameContentBox {
+  display: flex;
+  width: 100%;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: brown;
+
+}
+
+.contentBox div,
+nav {
+  flex: display;
+  align-items: center;
+}
+
+.contentBox div:hover {
+  box-shadow:
+    1px 1px #53ea93,
+    2px 2px #53ea93,
+    3px 3px #53ea93,
+    4px 4px #53ea93,
+    5px 5px #53ea93,
+    6px 6px #53ea93,
+    7px 7px #53ea93;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+  ;
+}
+
+
+@media (min-width: 768px) and (max-width: 1400px) {
+  #logoText {
+    position: absolute;
+    margin-top: -40px;
+  }
+
+  #hatBox {
+    height: 130px;
+  }
+
+  #menuText {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #menuText a {
+    margin: 0px 5px;
+    font-size: 16pt;
+  }
+
+  .contentBox {
+    margin: 30px;
+    padding: 00px 10px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-around;
+    border: 1;
+  }
+
+  .contentBox div {
+    padding-top: 0px;
+  }
+
+  #menuText input {
+    width: 150px;
+  }
+
+
+}
+
+@media (max-width: 767px) {
+  #logoText {
+    position: absolute;
+    margin-top: -40px;
+  }
+
+  #hatBox {
+    height: 130px;
+  }
+
+  #menuText {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #menuText a {
+    margin: 0px 3px;
+    font-size: 14pt;
+  }
+
+  #personalArea {
+    padding-left: 0px;
+  }
+
+  .contentBox {
+    margin: 5px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contentBox div {
+    margin: 20px;
+  }
+
+  .contentBox div em {
+    margin: 50;
+  }
+
+  .nameContentBox {
+    width: auto;
+  }
+
+  #footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menuText input {
+    width: 120px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form {
+  width: auto;
+  float: right;
+}
+
+input {
+  width: 250px;
+  height: 30px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+
+button {
+  width: 42px;
+  height: 30px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: -2px;
+  right: 0;
+}
+
+button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  color: #324b4e;
+}
